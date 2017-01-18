@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-	//hides the mouse cursor. Doesn't have to be here, but this script is everywhere
+	//hides and locks the mouse cursor. Doesn't have to be here, but this script is everywhere
 	void Start () {
 		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 
 	//loads level by name
